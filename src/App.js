@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import * as Routers from './router'
 import { Button } from 'antd'
 import logo from './logo.svg';
 import './App.css';
@@ -19,8 +20,8 @@ function App() {
         <Link to="/page2"><Button>page2</Button></Link>
 
         <Route path="/" exact component={Page1} />
-        <Route path="/page1" component={Page1} />
-        <Route path="/page2" component={Page2} />
+        <Route path={Routers.page1} component={Page1} />
+        <Route path={Routers.page2} component={Page2} />
       </Router>
     </div>
   );
