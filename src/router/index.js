@@ -1,2 +1,2 @@
-export const page1 = '/page1'
+export const home = '/home'
 export const page2 = '/page2'

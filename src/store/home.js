@@ -1,7 +1,7 @@
 import { observable, action } from 'mobx'
 
-export default class page1{
-    @observable msg = 'this is page1'
+export default class Home{
+    @observable msg = 'home page'
 
     @action showMsg = () => {
         console.log('msg:', this.msg)
