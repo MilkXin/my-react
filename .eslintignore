@@ -1,0 +1,7 @@
+# product path
+build
+
+# lib path
+node_modules
+config
+scripts
