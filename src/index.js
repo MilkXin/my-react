@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { configure } from 'mobx'
 import { Provider } from 'mobx-react'
 import rootStore from './store'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
+
+//开启严格模式，只能通过actions更改状态
+configure({ enforceActions: 'observed' })
 
 ReactDOM.render(
     <Provider {...rootStore}>
